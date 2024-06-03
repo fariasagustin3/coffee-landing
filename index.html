@@ -21,207 +21,194 @@
 </head>
 
 <body class="overflow-x-hidden">
-  <main>
-    <!-- navbar section -->
-    <header class="bg-transparent w-screen px-10">
-      <nav class="fixed top-0 z-10 pt-7">
-        <img src="/assets/logo.png" alt="logo" class="w-40">
-      </nav>
-    </header>
+  <!-- navbar -->
+  <nav>
+    <img src="/assets/logo.png" alt="" class="w-36 md:w-48 md:pl-5 mt-3 ml-3 bg-transparent absolute top-0">
+  </nav>
 
-    <!-- header section -->
-    <section class="w-screen h-screen">
-      <img src="/assets/coffee_image.png" alt="section-image" class="w-screen h-screen object-cover">
-      <div class="absolute z-10 top-0 bottom-0 left-20 m-auto h-max">
-        <h2 class="text-white">We’ve got your morning covered with</h2>
-        <h1 class="text-white text-[200px] my-2" style="font-family: 'Clicker Script';">Coffee</h1>
-        <p class="text-white w-1/2 leading-6">
-          It is best to start your day with a cup of coffee. Discover the
-          best flavours coffee you will ever have. We provide the best
-          for our customers.
-        </p>
-        <button class="text-[#1E1E1E] bg-[#F9C06A] rounded-full px-6 text-sm font-bold py-3 mt-2">Order Now</button>
-      </div>
-    </section>
+  <!-- header section -->
+  <section class="w-screen h-screen" style="background-image: url(assets/coffee_image.png);">
+    <div class="flex flex-col justify-center items-center md:items-start h-full px-5 md:px-20">
+      <span class="text-white md:text-[30px]">We’ve got your morning covered with</span>
+      <h1 class="text-white text-[50px] md:text-[120px] md:my-5" style="font-family: Clicker Script;">Coffee</h1>
+      <span class="text-center text-white text-xs md:text-[20px] md:text-left md:leading-7 md:w-1/2">
+        It is best to start your day with a cup of coffee. Discover the
+        best flavours coffee you will ever have. We provide the best
+        for our customers.
+      </span>
+      <button class="text-[#1E1E1E] bg-[#F9C06A] text-sm mt-3 font-bold px-3 py-2 md:py-4 md:px-6 rounded-full">Order
+        Now</button>
+    </div>
+  </section>
 
-    <!-- discover the best coffee section -->
-    <section class="relative w-screen h-full flex flex-row justify-center gap-5 py-10">
-      <!-- left side -->
-      <div class="flex-1 flex flex-col items-start justify-center pl-20">
-        <h2 class="text-[40px] font-semibold text-[#603809] mb-4">Discover the best coffee</h2>
-        <p class="leading-6 text-[#707070] mb-2">
-          Bean Scene is a coffee shop that provides you with quality coffee that helps boost your productivity
-          and helps build your mood. Having a cup of coffee is good, but having a cup of real coffee is greater.
-          There is no doubt that you will enjoy this coffee more than others you have ever tasted.
-        </p>
-        <button class="text-[#1E1E1E] bg-[#F9C06A] rounded-full px-6 text-sm font-bold py-3 mt-2">Learn More</button>
-        <img src="/assets/coffee_blast.png" alt="" class="absolute w-96 bottom-0 left-0 ">
-      </div>
-      <!-- right side -->
-      <div class="flex-1 flex items-center justify-center">
-        <img src="/assets/coffee-beans.png" alt="coffee-beans" class="w-2/3">
-      </div>
-    </section>
+  <!-- learn more section -->
+  <section class="w-screen h-full flex flex-col justify-center px-5 mt-5 md:flex-row">
+    <div class="flex flex-col md:flex-1 md:justify-center md:px-20">
+      <h2 class="text-[#603809] text-[26px] font-semibold text-center md:text-left">Discover the best coffee</h2>
+      <span class="text-[#707070] text-sm mt-3 text-center md:text-left">
+        Bean Scene is a coffee shop that provides you with quality
+        coffee that helps boost your productivity and helps build
+        your mood. Having a cup of coffee is good, but having a cup
+        of real coffee is greater. There is no doubt that you will
+        enjoy this coffee more than others you have ever tasted.
+      </span>
+      <button
+        class="text-[#1E1E1E] self-center md:self-start bg-[#F9C06A] text-sm mt-3 font-bold px-3 py-2 rounded-full">Learn
+        More</button>
+    </div>
+    <div class="md:flex-1 md:flex md:justify-center md:items-center">
+      <img src="/assets/coffee-beans.png" alt="" class="px-5 self-center md:w-96">
+    </div>
+  </section>
 
-    <!-- menu section -->
-    <section class="relative h-full w-screen flex flex-col items-center justify-center my-20">
-      <h2 class="text-[40px] font-semibold text-[#603809] mb-4">Enjoy a new blend of coffee style</h2>
-      <p class="leading-6 text-[#707070] mt-0 mb-5">Explore all flavours of coffee with us. There is always a new cup
-        worth experiencing</p>
-      <!-- products list -->
-      <div class="flex items-center justify-center gap-10 px-20 flex-wrap">
-        <!-- product item -->
-        <div class="flex flex-col items-center w-[230px] gap-2 my-5">
-          <img src="/assets/coffee-1.png" alt="" class="w-full">
-          <span class="text-[#603809] font-bold">Cappuccino</span>
-          <span class="text-[#1E1E1E] font-medium">Coffee 50% | Milk 50%</span>
-          <span class="font-bold text-[#603809]">$8.50</span>
-        </div>
-
-        <!-- product item -->
-        <div class="flex flex-col items-center w-[230px] gap-2 my-5">
-          <img src="/assets/coffee-2.png" alt="" class="w-full">
-          <span class="text-[#603809] font-bold">Chai Latte</span>
-          <span class="text-[#1E1E1E] font-medium">Coffee 50% | Milk 50%</span>
-          <span class="font-bold text-[#603809]">$8.50</span>
-        </div>
-
-        <!-- product item -->
-        <div class="flex flex-col items-center w-[230px] gap-2 my-5">
-          <img src="/assets/coffee-3.png" alt="" class="w-full">
-          <span class="text-[#603809] font-bold">Macchiato</span>
-          <span class="text-[#1E1E1E] font-medium">Coffee 50% | Milk 50%</span>
-          <span class="font-bold text-[#603809]">$8.50</span>
-        </div>
-
-        <!-- product item -->
-        <div class="flex flex-col items-center w-[230px] gap-2 my-5">
-          <img src="/assets/coffee-4.png" alt="" class="w-full">
-          <span class="text-[#603809] font-bold">Expresso</span>
-          <span class="text-[#1E1E1E] font-medium">Coffee 50% | Milk 50%</span>
-          <span class="font-bold text-[#603809]">$8.50</span>
-        </div>
-        <!-- product item -->
-        <div class="flex flex-col items-center w-[230px] gap-2 my-5">
-          <img src="/assets/coffee-1.png" alt="" class="w-full">
-          <span class="text-[#603809] font-bold">Cappuccino</span>
-          <span class="text-[#1E1E1E] font-medium">Coffee 50% | Milk 50%</span>
-          <span class="font-bold text-[#603809]">$8.50</span>
-        </div>
-
-        <!-- product item -->
-        <div class="flex flex-col items-center w-[230px] gap-2 my-5">
-          <img src="/assets/coffee-2.png" alt="" class="w-full">
-          <span class="text-[#603809] font-bold">Chai Latte</span>
-          <span class="text-[#1E1E1E] font-medium">Coffee 50% | Milk 50%</span>
-          <span class="font-bold text-[#603809]">$8.50</span>
-        </div>
-
-        <!-- product item -->
-        <div class="flex flex-col items-center w-[230px] gap-2 my-5">
-          <img src="/assets/coffee-3.png" alt="" class="w-full">
-          <span class="text-[#603809] font-bold">Macchiato</span>
-          <span class="text-[#1E1E1E] font-medium">Coffee 50% | Milk 50%</span>
-          <span class="font-bold text-[#603809]">$8.50</span>
-        </div>
-
-        <!-- product item -->
-        <div class="flex flex-col items-center w-[230px] gap-2 my-5">
-          <img src="/assets/coffee-4.png" alt="" class="w-full">
-          <span class="text-[#603809] font-bold">Expresso</span>
-          <span class="text-[#1E1E1E] font-medium">Coffee 50% | Milk 50%</span>
-          <span class="font-bold text-[#603809]">$8.50</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- amazing morning section -->
-    <section class="relative h-full w-screen">
-      <img src="/assets/image-section-coffee.png" alt="" class="w-full">
-      <div class="absolute top-0 bottom-0 left-20 m-auto h-max">
-        <h2 class="w-1/2 text-[60px] text-white font-semibold">Get a chance to have an amazing morning</h2>
-        <p class="w-1/2 text-xl mt-3 text-white">We are giving you are one time opportunity to experience a better life
-          with coffee.</p>
-        <button class="text-[#1E1E1E] bg-[#F9C06A] rounded-full px-6 text-sm font-bold py-3 mt-2">Order Now</button>
-      </div>
-    </section>
-
-    <!-- why we are different section -->
-    <section class="relative h-full w-screen z-20 flex flex-col items-center my-10">
-      <img src="/assets/coffee_blast.png" alt="" class="absolute rotate-180 w-96 top-0 right-0 -z-10">
-      <h2 class="text-[40px] font-semibold text-[#603809] mb-4">Why are we different?</h2>
-      <p class="leading-6 text-[#707070] mt-0 mb-5">We don’t just make your coffee, we make your day!</p>
-
-      <!-- differences section -->
-      <div class="flex flex-row items-center gap-5 my-10">
-        <!-- difference item -->
-        <div class="flex flex-col items-center gap-3">
-          <img src="/assets/coffee-beans-icon.png" alt="" class="w-20">
-          <span class="font-semibold text-[#603809] text-center">Supreme Beans</span>
-          <p class="text-[#707070] w-2/3 text-center">Beans that provides great taste</p>
-        </div>
-
-        <!-- difference item -->
-        <div class="flex flex-col items-center gap-3">
-          <img src="/assets/badge-icon.png" alt="" class="w-20">
-          <span class="font-semibold text-[#603809] text-center">High Quality</span>
-          <p class="text-[#707070] w-2/3 text-center">We provide the highest quality</p>
-        </div>
-
-        <!-- difference item -->
-        <div class="flex flex-col items-center gap-3">
-          <img src="/assets/coffee-cup-icon.png" alt="" class="w-20">
-          <span class="font-semibold text-[#603809] text-center">Extraordinary</span>
-          <p class="text-[#707070] w-2/3 text-center">Coffee like you have never tasted</p>
-        </div>
-
-        <!-- difference item -->
-        <div class="flex flex-col items-center gap-3">
-          <img src="/assets/best-price-icon.png" alt="" class="w-20">
-          <span class="font-semibold text-[#603809] text-center">Affordable Price</span>
-          <p class="text-[#707070] w-2/3 text-center">Our coffee prices are easy to afford</p>
-        </div>
+  <!-- menu section -->
+  <section class="w-screen h-full flex flex-col justify-center px-5 mt-5">
+    <h2 class="text-[#603809] text-[26px] font-semibold text-center">Enjoy a new blend of coffee style</h2>
+    <span class="text-[#707070] text-sm mt-3 text-center">Explore all flavours of coffee with us. There is always a new
+      cup worth experiencing</span>
+    <!-- product list -->
+    <div class="flex flex-wrap items-center justify-center md:px-40 md:gap-10 md:mb-20">
+      <!-- product item -->
+      <div class="flex flex-col items-center gap-2 w-[150px] md:w-[200px] my-5">
+        <img src="/assets/coffee-1.png" alt="" class="w-full">
+        <span class="text-[#603809] font-semibold">Cappuccino</span>
+        <span class="text-[#1E1E1E] text-xs font-semibold">Coffee 50% | Milk 50%</span>
+        <span class="text-[#603809] font-bold">$8.50</span>
       </div>
 
-      <!-- join us section -->
-      <div class="flex flex-col items-center justify-center gap-2 mt-10">
-        <p class="leading-6 text-[#707070]">Great ideas start with great coffee, Lets help you achieve that</p>
-        <h2 class="text-[20px] font-bold text-[#603809]">Get started today</h2>
-        <button class="text-[#1E1E1E] bg-[#F9C06A] rounded-full px-6 text-sm font-bold py-3 mt-2">Join Us</button>
+      <!-- product item -->
+      <div class="flex flex-col items-center gap-2 w-[150px] md:w-[200px] my-5">
+        <img src="/assets/coffee-2.png" alt="" class="w-full">
+        <span class="text-[#603809] font-semibold">Chai Latte</span>
+        <span class="text-[#1E1E1E] text-xs font-semibold">Coffee 50% | Milk 50%</span>
+        <span class="text-[#603809] font-bold">$8.50</span>
       </div>
-    </section>
 
-    <!-- footer section -->
-    <footer class="relative h-[100% - 100px] w-screen bg-[#603809]">
-      <img src="/assets/coffee-cup-image.png" alt="" class="absolute -left-5 -top-40 w-72">
-      <img src="/assets/coffee-cup-image-inverted.png" alt="" class="absolute -right-5 -top-40 w-72">
-      <img src="/assets/fotter_image.png" alt="" class="w-full bg-[#603809]">
-      <div class="absolute bottom-20 left-0 m-auto">
-        <div class="flex items-start justify-between px-20">
-          <!-- left side -->
-          <div class="flex flex-1 flex-col gap-3 flex-1">
-            <img src="/assets/logo.png" alt="" class="w-40">
-            <p class="leading-6 text-white w-4/5 text-sm font-thin">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-              when an unknown printer took a galley of type and scrambled it to make a
-              type specimen book.
-            </p>
-          </div>
-
-          <!-- right side -->
-          <div class="flex-1 flex flex-col justify-center items-center gap-3">
-            <h2 class="text-left w-60 text-white font-bold">Contact Us</h2>
-            <ul class="flex flex-col items-start gap-3 text-white">
-              <li>Fake Avenue 123, CABA, Argentina</li>
-              <li>+54 3425 342365</li>
-              <li>beanscene@mail.com</li>
-            </ul>
-          </div>
-        </div>
+      <!-- product item -->
+      <div class="flex flex-col items-center gap-2 w-[150px] md:w-[200px] my-5">
+        <img src="/assets/coffee-3.png" alt="" class="w-full">
+        <span class="text-[#603809] font-semibold">Macchiato</span>
+        <span class="text-[#1E1E1E] text-xs font-semibold">Coffee 50% | Milk 50%</span>
+        <span class="text-[#603809] font-bold">$8.50</span>
       </div>
-    </footer>
-  </main>
+
+      <!-- product item -->
+      <div class="flex flex-col items-center gap-2 w-[150px] md:w-[200px] my-5">
+        <img src="/assets/coffee-4.png" alt="" class="w-full">
+        <span class="text-[#603809] font-semibold">Expresso</span>
+        <span class="text-[#1E1E1E] text-xs font-semibold">Coffee 50% | Milk 50%</span>
+        <span class="text-[#603809] font-bold">$8.50</span>
+      </div>
+
+      <!-- product item -->
+      <div class="flex flex-col items-center gap-2 w-[150px] md:w-[200px] my-5">
+        <img src="/assets/coffee-1.png" alt="" class="w-full">
+        <span class="text-[#603809] font-semibold">Cappuccino</span>
+        <span class="text-[#1E1E1E] text-xs font-semibold">Coffee 50% | Milk 50%</span>
+        <span class="text-[#603809] font-bold">$8.50</span>
+      </div>
+
+      <!-- product item -->
+      <div class="flex flex-col items-center gap-2 w-[150px] md:w-[200px] my-5">
+        <img src="/assets/coffee-2.png" alt="" class="w-full">
+        <span class="text-[#603809] font-semibold">Chai Latte</span>
+        <span class="text-[#1E1E1E] text-xs font-semibold">Coffee 50% | Milk 50%</span>
+        <span class="text-[#603809] font-bold">$8.50</span>
+      </div>
+
+      <!-- product item -->
+      <div class="flex flex-col items-center gap-2 w-[150px] md:w-[200px] my-5">
+        <img src="/assets/coffee-3.png" alt="" class="w-full">
+        <span class="text-[#603809] font-semibold">Macchiato</span>
+        <span class="text-[#1E1E1E] text-xs font-semibold">Coffee 50% | Milk 50%</span>
+        <span class="text-[#603809] font-bold">$8.50</span>
+      </div>
+
+      <!-- product item -->
+      <div class="flex flex-col items-center gap-2 w-[150px] md:w-[200px] my-5">
+        <img src="/assets/coffee-4.png" alt="" class="w-full">
+        <span class="text-[#603809] font-semibold">Expresso</span>
+        <span class="text-[#1E1E1E] text-xs font-semibold">Coffee 50% | Milk 50%</span>
+        <span class="text-[#603809] font-bold">$8.50</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- amazing morning section -->
+  <section class="relative w-screen h-screen md:h-full md:py-10 px-5 flex flex-col justify-center items-center md:flex-row"
+    style="background-image: url(/assets/coffee-cup-backgound.png); background-size: cover;">
+    <div class="md:flex-1">
+      <h2 class="text-white text-[30px] text-center">Get a chance to have an amazing morning</h2>
+      <span class="text-white text-sm text-center mt-5 font-thin">We are giving you are one time opportunity to
+        experience a better life with coffee.</span>
+    </div>
+    <div class="md:flex-1">
+      <img src="/assets/cup.png" alt="" class="w-40 md:w-60 mt-16">
+      <img src="/assets/coffee_bean.png" alt="" class="hidden md:flex w-80 md:absolute md:z-10 md:right-0 md:bottom-0">
+    </div>
+    
+  </section>
+
+  <!-- join us section -->
+  <section class="px-5 mt-5 flex flex-col justify-center">
+    <h2 class="text-[#603809] text-[26px] font-semibold text-center">Why are we different?</h2>
+    <span class="text-[#707070] text-sm mt-3 text-center">We don’t just make your coffee, we make your day!</span>
+
+    <!-- differences list -->
+    <div class="flex flex-col items-center justify-center mb-10">
+      <!-- differences item -->
+      <div class="mt-5 flex gap-2 px-3 flex-col items-center justify-center w-48 h-48 border-[1px] border-[#FFF9F1]">
+        <img src="/assets/coffee-beans-icon.png" alt="" class="w-10">
+        <span class="text-xl text-[#603809] font-semibold">Supreme Beans</span>
+        <span class="text-[#707070] text-sm text-center">Beans that provides great taste</span>
+      </div>
+
+      <!-- differences item -->
+      <div class="mt-5 flex gap-2 px-3 flex-col items-center justify-center w-48 h-48 border-[1px] border-[#FFF9F1]">
+        <img src="/assets/badge-icon.png" alt="" class="w-10">
+        <span class="text-xl text-[#603809] font-semibold">High Quality</span>
+        <span class="text-[#707070] text-sm text-center">We provide the highest quality</span>
+      </div>
+
+      <!-- differences item -->
+      <div class="mt-5 flex gap-2 px-3 flex-col items-center justify-center w-48 h-48 border-[1px] border-[#FFF9F1]">
+        <img src="/assets/coffee-cup-icon.png" alt="" class="w-10">
+        <span class="text-xl text-[#603809] font-semibold">Extraordinary </span>
+        <span class="text-[#707070] text-sm text-center">Coffee like you have never tasted</span>
+      </div>
+
+      <!-- differences item -->
+      <div class="mt-5 flex flex-col items-center justify-center w-48 h-48 border-[1px] border-[#FFF9F1]">
+        <img src="/assets/best-price-icon.png" alt="" class="w-10">
+        <span class="text-xl text-[#603809] font-semibold">Affordable Price</span>
+        <span class="text-[#707070] text-sm text-center">Our Coffee prices are easy to afford</span>
+      </div>
+
+      <!-- join us texts -->
+      <div class="flex flex-col items-center gap-1 px-5 mt-5">
+        <span class="text-[#707070] text-xs text-center">Great ideas start with great coffee, Lets help you achieve
+          that</span>
+        <span class="text-[#603809] text-xl text-center font-bold">Get started today</span>
+        <button class="text-[#1E1E1E] bg-[#F9C06A] text-sm mt-3 font-bold px-3 py-2 rounded-full">Join Us</button>
+      </div>
+  </section>
+
+  <!-- footer section -->
+  <footer class="w-screen h-full py-10"
+    style="background-image: url(/assets/fotter_image.png); background-size: cover;">
+    <div class="w-screen flex items-center justify-center my-5">
+      <img src="/assets/logo.png" alt="">
+    </div>
+    <div class="w-screen flex flex-col items-center">
+      <h2 class="text-white font-semibold mb-3">Contact Us</h2>
+      <ul class="text-white flex flex-col items-center text-sm">
+        <li>Fake Avenue 123, Misiones, Argentina</li>
+        <li>+54 3423 432354</li>
+        <li>beanscene@mail.com</li>
+      </ul>
+    </div>
+  </footer>
+  </div>
 </body>
 
 </html>
