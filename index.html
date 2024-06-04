@@ -15,6 +15,7 @@
   <style>
     body {
       font-family: "Playfair Display", serif;
+      overflow-x: hidden;
     }
   </style>
   <title>Bean Scene - Coffee Shop</title>
@@ -27,7 +28,7 @@
   </nav>
 
   <!-- header section -->
-  <section class="w-screen h-screen" style="background-image: url(assets/coffee_image.png);">
+  <section class="w-screen h-screen" style="background-image: url(assets/coffee_image.png); background-size: cover;">
     <div class="flex flex-col justify-center items-center md:items-start h-full px-5 md:px-20">
       <span class="text-white md:text-[30px]">We’ve got your morning covered with</span>
       <h1 class="text-white text-[50px] md:text-[120px] md:my-5" style="font-family: Clicker Script;">Coffee</h1>
@@ -44,8 +45,8 @@
   <!-- learn more section -->
   <section class="w-screen h-full flex flex-col justify-center px-5 mt-5 md:flex-row">
     <div class="flex flex-col md:flex-1 md:justify-center md:px-20">
-      <h2 class="text-[#603809] text-[26px] font-semibold text-center md:text-left">Discover the best coffee</h2>
-      <span class="text-[#707070] text-sm mt-3 text-center md:text-left">
+      <h2 class="text-[#603809] text-[26px] md:text-[36px] font-semibold text-center md:text-left">Discover the best coffee</h2>
+      <span class="text-[#707070] text-sm mt-3 text-center md:text-left md:text-[16px] md:leading-[26px]">
         Bean Scene is a coffee shop that provides you with quality
         coffee that helps boost your productivity and helps build
         your mood. Having a cup of coffee is good, but having a cup
@@ -63,8 +64,8 @@
 
   <!-- menu section -->
   <section class="w-screen h-full flex flex-col justify-center px-5 mt-5">
-    <h2 class="text-[#603809] text-[26px] font-semibold text-center">Enjoy a new blend of coffee style</h2>
-    <span class="text-[#707070] text-sm mt-3 text-center">Explore all flavours of coffee with us. There is always a new
+    <h2 class="text-[#603809] text-[26px] md:text-[36px] font-semibold text-center">Enjoy a new blend of coffee style</h2>
+    <span class="text-[#707070] text-sm md:text-lg mt-3 text-center">Explore all flavours of coffee with us. There is always a new
       cup worth experiencing</span>
     <!-- product list -->
     <div class="flex flex-wrap items-center justify-center md:px-40 md:gap-10 md:mb-20">
@@ -135,67 +136,74 @@
   </section>
 
   <!-- amazing morning section -->
-  <section class="relative w-screen h-screen md:h-full md:py-10 px-5 flex flex-col justify-center items-center md:flex-row"
+  <section
+    class="relative w-screen h-screen md:h-full md:py-10 px-5 flex flex-col justify-center items-center md:flex-row"
     style="background-image: url(/assets/coffee-cup-backgound.png); background-size: cover;">
-    <div class="md:flex-1">
-      <h2 class="text-white text-[30px] text-center">Get a chance to have an amazing morning</h2>
-      <span class="text-white text-sm text-center mt-5 font-thin">We are giving you are one time opportunity to
+    <div class="md:flex-1 md:pl-10 flex flex-col items-center md:items-start">
+      <h2 class="text-white text-[30px] md:text-[60px] md:leading-24 md:text-left text-center md:mb-5 mb-2">Get a chance to
+        have an amazing morning</h2>
+      <span class="text-white text-sm md:text-[18px] text-center md:text-left mt-5 font-thin leading-7 md:whitespace-pre-line">We are giving you are one time opportunity to 
         experience a better life with coffee.</span>
     </div>
-    <div class="md:flex-1">
+    <div class="md:flex-1 md:flex md:items-center md:justify-center">
       <img src="/assets/cup.png" alt="" class="w-40 md:w-60 mt-16">
       <img src="/assets/coffee_bean.png" alt="" class="hidden md:flex w-80 md:absolute md:z-10 md:right-0 md:bottom-0">
     </div>
-    
+
   </section>
 
   <!-- join us section -->
   <section class="px-5 mt-5 flex flex-col justify-center">
-    <h2 class="text-[#603809] text-[26px] font-semibold text-center">Why are we different?</h2>
-    <span class="text-[#707070] text-sm mt-3 text-center">We don’t just make your coffee, we make your day!</span>
+    <h2 class="text-[#603809] text-[26px] md:text-[36px] font-semibold text-center">Why are we different?</h2>
+    <span class="text-[#707070] text-sm md:text-lg mt-3 text-center">We don’t just make your coffee, we make your
+      day!</span>
 
     <!-- differences list -->
     <div class="flex flex-col items-center justify-center mb-10">
-      <!-- differences item -->
-      <div class="mt-5 flex gap-2 px-3 flex-col items-center justify-center w-48 h-48 border-[1px] border-[#FFF9F1]">
-        <img src="/assets/coffee-beans-icon.png" alt="" class="w-10">
-        <span class="text-xl text-[#603809] font-semibold">Supreme Beans</span>
-        <span class="text-[#707070] text-sm text-center">Beans that provides great taste</span>
-      </div>
+      <div class="md:flex md:flex-row md:gap-10">
+        <!-- differences item -->
+        <div class="mt-5 flex gap-2 px-3 flex-col items-center justify-center w-48 h-48 border-[1px] border-[#FFF9F1]">
+          <img src="/assets/coffee-beans-icon.png" alt="" class="w-10">
+          <span class="text-xl text-[#603809] font-semibold">Supreme Beans</span>
+          <span class="text-[#707070] text-sm text-center">Beans that provides great taste</span>
+        </div>
 
-      <!-- differences item -->
-      <div class="mt-5 flex gap-2 px-3 flex-col items-center justify-center w-48 h-48 border-[1px] border-[#FFF9F1]">
-        <img src="/assets/badge-icon.png" alt="" class="w-10">
-        <span class="text-xl text-[#603809] font-semibold">High Quality</span>
-        <span class="text-[#707070] text-sm text-center">We provide the highest quality</span>
-      </div>
+        <!-- differences item -->
+        <div class="mt-5 flex gap-2 px-3 flex-col items-center justify-center w-48 h-48 border-[1px] border-[#FFF9F1]">
+          <img src="/assets/badge-icon.png" alt="" class="w-10">
+          <span class="text-xl text-[#603809] font-semibold">High Quality</span>
+          <span class="text-[#707070] text-sm text-center">We provide the highest quality</span>
+        </div>
 
-      <!-- differences item -->
-      <div class="mt-5 flex gap-2 px-3 flex-col items-center justify-center w-48 h-48 border-[1px] border-[#FFF9F1]">
-        <img src="/assets/coffee-cup-icon.png" alt="" class="w-10">
-        <span class="text-xl text-[#603809] font-semibold">Extraordinary </span>
-        <span class="text-[#707070] text-sm text-center">Coffee like you have never tasted</span>
-      </div>
+        <!-- differences item -->
+        <div class="mt-5 flex gap-2 px-3 flex-col items-center justify-center w-48 h-48 border-[1px] border-[#FFF9F1]">
+          <img src="/assets/coffee-cup-icon.png" alt="" class="w-10">
+          <span class="text-xl text-[#603809] font-semibold">Extraordinary </span>
+          <span class="text-[#707070] text-sm text-center">Coffee like you have never tasted</span>
+        </div>
 
-      <!-- differences item -->
-      <div class="mt-5 flex flex-col items-center justify-center w-48 h-48 border-[1px] border-[#FFF9F1]">
-        <img src="/assets/best-price-icon.png" alt="" class="w-10">
-        <span class="text-xl text-[#603809] font-semibold">Affordable Price</span>
-        <span class="text-[#707070] text-sm text-center">Our Coffee prices are easy to afford</span>
+        <!-- differences item -->
+        <div class="mt-5 flex flex-col items-center justify-center w-48 h-48 border-[1px] border-[#FFF9F1]">
+          <img src="/assets/best-price-icon.png" alt="" class="w-10">
+          <span class="text-xl text-[#603809] font-semibold">Affordable Price</span>
+          <span class="text-[#707070] text-sm text-center">Our Coffee prices are easy to afford</span>
+        </div>
       </div>
 
       <!-- join us texts -->
       <div class="flex flex-col items-center gap-1 px-5 mt-5">
-        <span class="text-[#707070] text-xs text-center">Great ideas start with great coffee, Lets help you achieve
+        <span class="text-[#707070] text-xs md:text-lg text-center">Great ideas start with great coffee, Lets help you achieve
           that</span>
-        <span class="text-[#603809] text-xl text-center font-bold">Get started today</span>
+        <span class="text-[#603809] text-xl md:text-2xl text-center font-bold">Get started today</span>
         <button class="text-[#1E1E1E] bg-[#F9C06A] text-sm mt-3 font-bold px-3 py-2 rounded-full">Join Us</button>
       </div>
   </section>
 
   <!-- footer section -->
-  <footer class="w-screen h-full py-10"
+  <footer class="relative w-screen h-full py-10 md:flex md:h-60 md:items-center"
     style="background-image: url(/assets/fotter_image.png); background-size: cover;">
+    <img src="/assets/coffee-cup-image.png" alt="" class="absolute -top-40 left-0 w-60 hidden md:flex">
+    <img src="/assets/coffee-cup-image-inverted.png" alt="" class="absolute -top-40 right-0 w-60 hidden md:flex">
     <div class="w-screen flex items-center justify-center my-5">
       <img src="/assets/logo.png" alt="">
     </div>
